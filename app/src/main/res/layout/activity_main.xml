@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_height"
+        android:layout_width="378dp"
+        android:layout_height="65dp"
+        android:hint="Enter height"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_height"
+        android:layout_marginTop="36dp"
+        android:text="Save Height Point" />
+
+    <Button
+        android:id="@+id/button_plot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_save"
+        android:layout_marginTop="29dp"
+        android:text="Plot" />
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/plot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_plot"
+        tools:ignore="MissingClass" />
+
+</RelativeLayout>
+
+
+
+
+
